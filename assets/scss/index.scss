@@ -1,0 +1,216 @@
+@import 'core/core-pack.scss';
+@import 'variables';
+@import 'pages/pages-pack.scss';
+@import 'header';
+@import 'footer';
+// @import 'header-cristian';
+
+@font-face {
+    font-family: 'Engravers\' Gothic';
+    src: url('assets/fonts/EngraversGothicBT-Regular.eot');
+    src: url('assets/fonts/EngraversGothicBT-Regular.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/EngraversGothicBT-Regular.woff2') format('woff2'),
+        url('assets/fonts/EngraversGothicBT-Regular.woff') format('woff'),
+        url('assets/fonts/EngraversGothicBT-Regular.ttf') format('truetype'),
+        url('assets/fonts/EngraversGothicBT-Regular.svg#EngraversGothicBT-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue LT Pro';
+    src: url('assets/fonts/HelveticaNeueLTPro-Ex.eot');
+    src: url('assets/fonts/HelveticaNeueLTPro-Ex.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/HelveticaNeueLTPro-Ex.woff2') format('woff2'),
+        url('assets/fonts/HelveticaNeueLTPro-Ex.woff') format('woff'),
+        url('assets/fonts/HelveticaNeueLTPro-Ex.ttf') format('truetype'),
+        url('assets/fonts/HelveticaNeueLTPro-Ex.svg#HelveticaNeueLTPro-Ex') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body{
+
+    font-size: 16px;
+    font-family: 'Epilogue', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: initial;
+}
+
+button{
+    border: none;
+    background: none;
+}
+
+ul{
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+section{
+    padding:60px 0;
+    @media (max-width:578px){
+        padding: 40px 0;
+    }
+}
+
+.img-fit{
+    position: relative;
+    img, video{
+        object-fit: cover;
+        object-position: center;
+        -o-object-fit: cover;
+        -o-object-position: center;
+        width: 100%;
+        height: 100%;
+    }
+}
+.img-contain{
+    position: relative;
+    img, video{
+        object-fit: contain;
+        object-position: center;
+        -o-object-fit: contain;
+        -o-object-position: center;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.custom-container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+   @media (max-width:1250px){
+    padding: 0 22px;
+   }
+}
+
+.section-antetitle{
+    color: #666666;
+ }
+
+.section-title{
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 30px;
+    font-family: 'Helvetica Neue LT Pro';
+    @media(max-width:991px){
+        font-size: 40px;
+    }
+}
+
+.section-subtitle{
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1.1;
+    // color: $black;
+    font-family: 'Helvetica Neue LT Pro';
+    @media(max-width:991px){
+       font-size: 29px;
+     }
+     @media(min-width:1400px){
+        font-size: 50px;
+     }
+}
+
+.ord-btn{
+    padding: 16px 32px;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    min-width: 165px;
+    font-weight: 500;
+    transition: all 0.3s;
+    position: relative;
+    &:after, &:before{
+        content: "";
+        position: absolute;
+        height: 0;
+        width: 2px;
+        transition: all 0.3s;
+        background: rgb(5, 5, 5);
+    }
+    &:after{
+        right: 0;
+        bottom: 0;
+    }
+    &:before{
+        left:0;
+        top: 0;
+    }
+    &:hover{
+        &:after, &:before{
+            height: 100%;
+        }
+        
+    }
+     &.line-btn{
+            border-top: 2px solid #fff;
+            border-bottom: 2px solid #fff;
+            background: transparent;
+            color: white;
+            &:after, &:before{
+                background: #fff;
+            }
+        }
+     
+        &.line-black{
+            border-top: 2px solid rgb(5, 5, 5);
+            border-bottom: 2px solid rgb(0, 0, 0);
+            background: transparent;
+            color: rgb(0, 0, 0);
+        }
+}
+
+.m-left{
+    // margin-left: 20px;
+    // margin-left: -32px;
+    @media(max-width:991px){
+        margin-left: -10px;
+    }
+}
+
+main{
+    margin-left: 80px;
+    &:not(.main-home){
+        padding-bottom: 60px;
+    }
+    @media(max-width:991px){
+        margin-left: 0;
+        padding-bottom: 0;
+    }
+}
+
+.pd-main{
+    margin-top: 87px;
+}
+
+// .contenido{
+//     margin-left: 7%;
+//     @media(max-width:991px){
+//         margin-left: 0%;
+//     }
+// }
+
+.p-26{
+    font-size: 26px;
+}
+
+.p-20{
+    font-size: 20px;
+}

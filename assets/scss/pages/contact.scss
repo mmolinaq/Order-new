@@ -1,0 +1,118 @@
+#form{
+    position: relative;
+    z-index: 1;
+    &:before{
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        top: 0;
+        width: 76%;
+        height: 100%;
+        background: #fff;
+    }
+
+    .container-fluid{
+        background: white;
+        padding-left: 82px;
+        margin-left: 0;
+        border-radius: 0px 0px 192px 0px;
+        @media(max-width:768px){
+            border-radius: 0;
+            margin-left: auto;
+            padding-left: calc(var(--bs-gutter-x)*.5);
+        }
+    }
+
+    .section-title{
+        font-size: 47px;
+        @media(max-width:480px){
+            font-size: 35px;
+        }
+    }
+
+
+    // .row{
+    //     padding-right: 0;
+    // }
+
+    .form_field{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+        position: relative;
+    }
+
+    input , textarea{
+       padding: 10px;
+       border-radius: 6px;
+       border: 1px solid black;
+       color: gray;
+    }
+
+    label{
+        background: white;
+        position: absolute;
+        left: 8px;
+        top: -22px;
+        padding: 5px 9px
+    }
+
+    .img-contact{
+        height: calc(100% + 120px);
+        top: -60px;
+        width: 100%;
+        min-width: calc(100% + 20px);
+        @media(max-width:768px){
+            height: 100%;
+            margin-top: 0;
+        }
+        img{
+            border-radius: 0px 0px 150px 0px;
+            @media(max-width:600px){
+                border-radius: 10px;
+                padding-bottom: 20px;
+            }
+        }
+    }
+}
+
+.location-contact{
+    position: relative;
+    // z-index: -1;
+    // background: rgb(163,0,213);
+    // background: linear-gradient(180deg, rgba(163,0,213,0.963202468487395) 0%, rgba(0,0,0,1) 27%);
+    // margin-top: -140px;
+    &:before{
+        content: "";
+        width: 100%;
+        height: calc(100% + 180px);
+        background: #0F0F0F;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        position: absolute;
+
+    }
+
+    .section-subtitle{
+        color: white;
+        text-align: center;
+        margin-bottom: 75px;
+    }
+
+    .locations {
+        padding-bottom: 0;
+        margin-top: 0px;
+
+        .swiper-slide {
+            width: auto;
+        }
+    }
+
+    .slick-dots {
+        bottom: -8%;
+        left: 0;
+    }
+
+}

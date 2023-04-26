@@ -1,0 +1,4 @@
+node_modules
+custom.min*
+*.mp4
+.vscode

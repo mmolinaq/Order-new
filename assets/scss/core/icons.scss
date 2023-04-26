@@ -1,0 +1,135 @@
+$icomoon-font-family: "order" !default;
+$icomoon-font-path: "assets/fonts" !default;
+
+$icon-inicio-comillas: "\e90f";
+$icon-final-comillas: "\e910";
+$icon-doble-flecha: "\e900";
+$icon-comillas: "\e901";
+$icon-arrowline-left: "\e902";
+$icon-arrowline-right: "\e903";
+$icon-arrowline-up: "\e904";
+$icon-arrowlongline-left: "\e905";
+$icon-arrowlongline-right: "\e906";
+$icon-facebook: "\e907";
+$icon-linkedin: "\e908";
+$icon-location: "\e909";
+$icon-twitter: "\e90a";
+$icon-whatsapp: "\e90b";
+$icon-youtube: "\e90c";
+$icon-check: "\e90d";
+$icon-close: "\e90e";
+
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?np1cbw');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?np1cbw#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?np1cbw') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?np1cbw') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?np1cbw##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-inicio-comillas {
+  &:before {
+    content: $icon-inicio-comillas; 
+  }
+}
+.icon-final-comillas {
+  &:before {
+    content: $icon-final-comillas; 
+  }
+}
+.icon-doble-flecha {
+  &:before {
+    content: $icon-doble-flecha; 
+  }
+}
+.icon-comillas {
+  &:before {
+    content: $icon-comillas; 
+  }
+}
+.icon-arrowline-left {
+  &:before {
+    content: $icon-arrowline-left; 
+  }
+}
+.icon-arrowline-right {
+  &:before {
+    content: $icon-arrowline-right; 
+  }
+}
+.icon-arrowline-up {
+  &:before {
+    content: $icon-arrowline-up; 
+  }
+}
+.icon-arrowlongline-left {
+  &:before {
+    content: $icon-arrowlongline-left; 
+  }
+}
+.icon-arrowlongline-right {
+  &:before {
+    content: $icon-arrowlongline-right; 
+  }
+}
+.icon-facebook {
+  &:before {
+    content: $icon-facebook; 
+  }
+}
+.icon-linkedin {
+  &:before {
+    content: $icon-linkedin; 
+  }
+}
+.icon-location {
+  &:before {
+    content: $icon-location; 
+  }
+}
+.icon-twitter {
+  &:before {
+    content: $icon-twitter; 
+  }
+}
+.icon-whatsapp {
+  &:before {
+    content: $icon-whatsapp; 
+  }
+}
+.icon-youtube {
+  &:before {
+    content: $icon-youtube; 
+  }
+}
+.icon-check {
+  &:before {
+    content: $icon-check; 
+  }
+}
+.icon-close {
+  &:before {
+    content: $icon-close; 
+  }
+}
+

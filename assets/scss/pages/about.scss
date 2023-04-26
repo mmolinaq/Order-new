@@ -1,0 +1,438 @@
+#banner-about{
+    background: linear-gradient(90deg, rgba(14,18,100,1) 0%, rgba(0,0,0,1) 25%);
+    padding: 0;
+    .title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-title{
+        color: white;
+        text-align: center;
+        @media(max-width:768px){
+            padding: 30px 0;
+        }
+    }
+    img{
+        border-radius: 0 0 0 120px;
+        height: 480px;
+        @media(max-width:768px){          
+          height: 300px;
+        }
+
+        @media(max-width:480px){          
+            height: auto;
+          }
+    }
+}
+
+#proposal{
+  .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-subtitle{
+    margin-bottom: 30px;
+  }
+
+  p{
+    b , strong{
+        color: #a300d5;
+    }
+  }
+}
+
+.list-proposal{
+    ul{
+        display: grid;
+        grid-template-columns: repeat(2, calc(50% - 15px));
+        grid-gap: 22px;
+        @media(max-width:768px){
+            margin-bottom: 25px;
+        }
+        @media(max-width:578px){
+            grid-template-columns: repeat(1, calc(100% - 15px));
+        }
+    }
+
+    li{
+        position: relative;
+        p{
+            margin-left: 33px;
+            margin-bottom: 0;
+        }
+        &:after{
+            content: $icon-check;
+            font-family: $icomoon-font-family;
+            font-size: 14px;
+            position: absolute;
+            top: 0;
+            background: #0e32e03b;
+            border-radius: 100%;
+            width: 20px;
+            height: 20px;
+            border: 1px solid #2C3E50;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+
+
+    }
+}
+
+.img-proposal{
+    right: 0;
+    width: 400px;
+    height: 450px;
+    img{
+        border-radius: 14px 0px 0px 14px;
+    }
+    @media(max-width:1300px){
+        width: auto;
+    }
+    @media(max-width:768px){
+        height: auto;
+    }
+}
+
+#environments{
+    // margin-bottom: 230px;
+    // @media(max-width:768px){
+    //     margin-bottom: 100px;
+    // }
+    .environments-color{
+        background: rgba(14,50,224,.231372549);
+    }
+
+    .environments-info{
+        padding: 20px 40px;
+        @media(max-width:578px){
+            padding-right: calc(var(--bs-gutter-x)*.5);
+            padding-left: calc(var(--bs-gutter-x)*.5);
+        }
+    }
+
+    .list-proposal ul {
+        display: grid;
+        grid-template-columns: repeat(3, calc(33.3% - 15px));
+        grid-gap: 22px;
+        @media(max-width:991px){
+            grid-template-columns: repeat(2, calc(50% - 15px));
+        }
+        @media(max-width:578px){
+            grid-template-columns: repeat(1, calc(100% - 15px));
+        }
+    }
+}
+
+#team{
+ .section-subtitle{
+    font-size: 45px;
+ }
+
+ .p-20{
+    margin-top: 20px;
+ }
+}
+.title-team{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+    @media(max-width:991px){
+        padding-top: 0;
+    }
+}
+
+.staff{
+    padding-top: 140px;
+    @media(max-width:991px){
+        padding-top: 60px;
+
+    }
+}
+
+.item-staff{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    @media(max-width:991px){
+       margin-bottom: 30px;
+    }
+    p{
+        color: #0E32E0;
+    }
+    .img-fit{
+        width: 200px;
+        height: 200px;
+    }
+    img{
+        border-radius: 100%;
+    }
+    &:first-child{
+        position: absolute;
+        top: 0;
+        @media(max-width:991px){
+            position: relative;
+        }
+    }
+
+    &:nth-child(2){
+        position: absolute;
+        top: 0;
+        right: 0;
+        @media(max-width:991px){
+            position: relative;
+        }
+    }
+    &:before{
+        content: '';
+        background-image: url(images/cuadrado-claro.svg);
+        height: 75px;
+        width: 75px;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        transform: translate(39px, -22px);
+        @media(min-width:1420px){
+            transform: translate(62px, -22px);
+        }
+        @media(max-width:1200px){
+            transform: translate(16px, -22px);
+        }
+        @media(max-width:991px){
+            transform: translate(78px, -22px);
+        }
+        @media(max-width:768px){
+            transform: translate(166px, -22px);
+        }
+
+    }
+
+    .img-banner{
+        -webkit-mask-box-image: url('images/mask-order.svg');
+    }
+        
+}
+
+#advantages{
+    position: relative;
+    .img-principal, video{
+        width: 60%;
+        margin-bottom: 65px;
+        border-radius: 0 20px 20px 0;
+        @media(max-width:578px){
+            width: 90%;
+            // top: -163px;
+        }
+
+        img{
+            border-radius: 0px 20px 20px 0px;
+        }
+    }
+    
+    .p-20{
+        font-weight: 600;
+    }
+
+    .arrow{
+        @media(max-width:768px){
+            display: none;
+        }
+    }
+
+    &:after{
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top:35%;
+        left: 0;
+        height: 65%;
+        width: 100%;
+        background: rgb(154 154 154 / 14%);
+    }
+
+}
+
+.advantages-item{
+    padding: 0 26px;
+    .img-fit{
+       width: 40px;
+       margin-bottom: 15px;
+    }
+    @media(max-width:768px){
+        margin-bottom: 20px;
+    }
+}
+
+#sentence{
+    .section-title{
+        font-size: 30px;
+        font-family: "Helvetica Neue LT Pro";
+        line-height: 1.3;
+        display: flex;
+    }
+
+    i{
+        color: #a300d5;
+    }
+}
+
+#company-tabs{
+    .tab-content{
+
+    }
+
+    .img-principal{
+        height: 300px;
+        border-radius: 20px;
+        @media(max-width:768px){
+            height: 200px;
+            margin-bottom: 30px;
+        }
+
+        img{
+            border-radius: 0px 20px 20px 0;
+            @media(max-width:768px){
+                border-radius: 10px;
+            }
+        }
+    }
+
+    .nav-tabs{
+        @media(max-width:768px){
+            flex-wrap: inherit;
+            overflow-y: hidden;
+            align-items: center;
+            overflow-x: auto;
+        }
+        
+    }
+
+    .nav-tabs .nav-link.active{
+        background: #9137ac;
+        padding: 10px 25px;
+        color: white !important;
+    }
+
+    .nav-item{
+        background: rgba(154,154,154,.14) ;
+        border-radius: 0px 12px 0 0px;
+        font-family: "Helvetica Neue LT Pro";
+        font-size: 19px;
+
+        button{
+            color: black;
+            padding: 10px 25px;
+            @media(max-width:578px){
+                width: 223px;
+            }
+        }
+    }
+
+    .tab-pane{
+        padding: 46px 0;
+        .row{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo{
+            width: 40px;
+            margin-bottom: 20px;
+        }
+    }
+
+    strong{
+        color: #a300d5;
+    }
+}
+
+#alliance{
+    overflow: hidden;
+    .img-security{
+        display: flex;
+       justify-content: flex-end;
+
+       .img-fit{
+        height: 100%;
+        right: -230px;
+        width: 128vw;
+        min-height: 92%;
+        min-width: 48vw;
+        @media(max-width:480px){
+            right: -60px;
+        }
+        // @media(max-width:1600px){
+        //     right: -308px;
+        // }
+        @media(min-width:1400px){
+            right: -334px;
+            min-width: 43vw;
+        }
+       }
+
+       img{
+        border-radius: 20px;
+       }
+    }
+
+    p{
+        strong{
+            color: #a300d5;
+        }
+    }
+}
+
+#relations{
+    
+}
+
+.img-relations{
+    position: sticky;
+    top: 85px;
+    margin-top: 80px;
+    .img-fit{
+        height: 420px;
+    }
+    img{
+        border-radius: 10px;
+        filter: brightness(0.8);
+
+    }
+    .title-relations{
+        position: absolute;
+        bottom: 30px;
+        padding: 20px;
+        color: white;
+    }
+
+    .title-card{
+        padding-left: 250px;
+        padding-top: 30px;
+        @media(max-width:1120px){
+            padding-left: 0;
+        }
+    }
+}
+
+.card{
+    margin: 20px 0;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    .number{ 
+     font-size: 45px;
+     font-family: 'Helvetica Neue LT Pro';
+    }
+}
